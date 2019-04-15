@@ -3,8 +3,11 @@ package Composite;
 import java.util.List;
 
 import Factory.*;
+import Observer.Observer;
 
 public class manufacturer {
+    int wallet;
+    int worth;
     String name;
     manufacturer parent;
     List<manufacturer> childs;
@@ -12,11 +15,13 @@ public class manufacturer {
     Storage carHold;
     List<dealership> dealerships; 
 
-    public manufacturer(CarType type, String name, int price) {
+    public manufacturer(CarType type, String name, int price, int worth) {
         this.name = name;
         factories.add(new CarFactory(price, type));
         carHold = new Storage();
-        dealerships.add(new dealership(carHold));
+        dealerships.add(new dealership(carHold, new Observer(this)));
+        this.worth = worth;
+        wallet = 0;
     }
 
     public void addManufacturer(manufacturer child) {
@@ -62,12 +67,16 @@ public class manufacturer {
             return true;
         }
     }
-    
+
     public void addParent(manufacturer parent) {
         this.parent = parent;
     }
-    
+
     public manufacturer getParent() {
         return parent;
+    }
+
+    public void addToWallet(int price) {
+        wallet += price;
     }
 }
