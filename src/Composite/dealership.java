@@ -1,18 +1,22 @@
 package Composite;
 import Factory.*;
+import Observer.Observer;
 
 public class dealership {
     private Storage carHold;
     private Car lot[];
+    private Observer observer;
 
-    public dealership(Storage carHold) {
+    public dealership(Storage carHold, Observer observer) {
         this.carHold = carHold;
         lot = new Car[30];
+        this.observer = observer;
     }
     
     public boolean sell(CarType type, Color color) {
         for(int i = 0; i < lot.length; i++) {
             if(lot[i].getColor() == color && lot[i].getType() == type) {
+                observer.update(lot[i].getPrice());
                 lot[i] = null;
                 return true;
             }
