@@ -21,6 +21,6 @@
 .DS_Store
 
 ##ignore the auto generated .gitignore made by eclipse##
-./.gitignore
+./gitignore
 
 /bin/
