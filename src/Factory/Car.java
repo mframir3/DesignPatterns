@@ -2,13 +2,13 @@ package Factory;
 public class Car {
 
     private int topSpeed;
-    private String color;
+    private Color color;
     private int mpg;
     private int seats;
     private CarType type;
     private int price;
     
-    protected Car(CarType type, String color, int topSpeed, int mpg, int seats, int price) {
+    protected Car(CarType type, Color color, int topSpeed, int mpg, int seats, int price) {
         this.type = type;
         this.color = color;
         this.topSpeed = topSpeed;
@@ -21,7 +21,7 @@ public class Car {
         return topSpeed;
     }
 
-    public String getColor() {
+    public Color getColor() {
         return color;
     }
 
