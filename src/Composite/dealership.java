@@ -13,9 +13,12 @@ public class dealership {
         this.observer = observer;
     }
     
-    public boolean sell(CarType type, Color color) {
+    public boolean sell(CarType type, Color color, int price) {
         for(int i = 0; i < lot.length; i++) {
-            if(lot[i].getColor() == color && lot[i].getType() == type) {
+            if(lot[i] == null) {
+                
+            }
+            else if(lot[i].getColor() == color && lot[i].getType() == type && lot[i].getPrice() <= price) {
                 observer.update(lot[i].getPrice());
                 lot[i] = null;
                 return true;
@@ -38,6 +41,10 @@ public class dealership {
         }
         
         return true;
+    }
+
+    public void updateObservers(manufacturer target) {
+        observer.updateTarget(target);
     }
 
 }
