@@ -6,7 +6,7 @@ import java.util.List;
 import Factory.*;
 
 public class Storage {
-    List<Car> cars;
+    ArrayList<Car> cars;
     
     public Storage() {
         cars = new ArrayList<Car>();
@@ -20,7 +20,9 @@ public class Storage {
         if (cars.isEmpty()) {
             return null;
         }
-        
-        return cars.remove(0);
+        Car car = cars.remove(0);
+        cars.remove(car);
+        cars.trimToSize();
+        return car;
     }
 }

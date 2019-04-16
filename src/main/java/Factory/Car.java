@@ -25,7 +25,7 @@ public class Car {
         return color;
     }
 
-    public int getFuelMilage() {
+    public int getMPG() {
         return mpg;
     }
 
