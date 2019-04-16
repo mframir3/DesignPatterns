@@ -8,7 +8,7 @@ public class CarFactory {
         this.model = model; 
     }
     
-    public Car produce(String color) {
+    public Car produce(Color color) {
         if(model == CarType.SPORT) {
             return new SportsCar(color, price);
         }

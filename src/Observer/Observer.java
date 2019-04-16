@@ -12,4 +12,8 @@ public class Observer {
     public void update(int price) {
         home.addToWallet(price);
     }
+
+    public void updateTarget(manufacturer target) {
+        home = target;
+    }
 }

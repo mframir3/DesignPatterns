@@ -1,8 +1,8 @@
 package Factory;
 
 public class SportsCar extends Car{
-    protected SportsCar(String Color, int price) {
-        super(CarType.SPORT, Color, 120, 24, 2, price);
+    protected SportsCar(Color color, int price) {
+        super(CarType.SPORT, color, 120, 24, 2, price);
     }
     
     @Override

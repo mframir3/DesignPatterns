@@ -2,8 +2,8 @@ package Factory;
 
 public class truck extends Car{
 
-    protected truck(String Color, int price) {
-        super(CarType.TRUCK, Color, 140, 18, 4, price);
+    protected truck(Color color, int price) {
+        super(CarType.TRUCK, color, 140, 18, 4, price);
     }
     
     @Override
