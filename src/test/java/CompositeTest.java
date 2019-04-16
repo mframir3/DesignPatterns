@@ -9,10 +9,10 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 
 public class CompositeTest {
-    manufacturer shop = new manufacturer(CarType.HYBRID, "Honda", 20000, 400000);
-    manufacturer child = new manufacturer(CarType.SPORT, "Honda2", 20000, 400000);
-    manufacturer shop1 = new manufacturer(CarType.HYBRID, "Honda", 20000000, 400000);
-    manufacturer child1 = new manufacturer(CarType.SPORT, "Honda2", 20000, 400000);
+    Manufacturer shop = new Manufacturer(CarType.HYBRID, "Honda", 20000, 400000);
+    Manufacturer child = new Manufacturer(CarType.SPORT, "Honda2", 20000, 400000);
+    Manufacturer shop1 = new Manufacturer(CarType.HYBRID, "Honda", 20000000, 400000);
+    Manufacturer child1 = new Manufacturer(CarType.SPORT, "Honda2", 20000, 400000);
     
     @BeforeClass
     public static void setUpBeforeClass() throws Exception {

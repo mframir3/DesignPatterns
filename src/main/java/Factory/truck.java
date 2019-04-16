@@ -1,8 +1,8 @@
 package Factory;
 
-public class truck extends Car{
+public class Truck extends Car {
 
-    protected truck(Color color, int price) {
+    protected Truck(Color color, int price) {
         super(CarType.TRUCK, color, 140, 18, 4, price);
     }
     

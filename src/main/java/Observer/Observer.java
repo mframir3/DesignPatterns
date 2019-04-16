@@ -1,11 +1,11 @@
 package Observer;
 
-import Composite.manufacturer;
+import Composite.Manufacturer;
 
 public class Observer {
-    manufacturer home;
+    Manufacturer home;
     
-    public Observer(manufacturer home) {
+    public Observer(Manufacturer home) {
         this.home = home;
     }
     
@@ -13,7 +13,7 @@ public class Observer {
         home.addToWallet(price);
     }
 
-    public void updateTarget(manufacturer target) {
+    public void updateTarget(Manufacturer target) {
         home = target;
     }
 }

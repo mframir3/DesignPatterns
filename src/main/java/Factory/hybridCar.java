@@ -1,8 +1,8 @@
 package Factory;
 
-public class hybridCar extends Car{
+public class HybridCar extends Car {
     
-    protected hybridCar(Color color, int price) {
+    protected HybridCar(Color color, int price) {
         super(CarType.HYBRID, color, 120, 46, 5, price);
     }
     

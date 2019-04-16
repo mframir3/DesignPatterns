@@ -33,7 +33,7 @@ public class FactoryTests {
         Car car = factory.produce(Color.RED);
         assertTrue(car.getPrice() == 20000);
         assertTrue(car.getType() == CarType.SPORT);
-        assertTrue(car.getMPG() == 24);
+        assertTrue(car.getMpg() == 24);
         assertTrue(car.getTopSpeed() == 220);
         assertTrue(car.getSeats() == 2);
         assertTrue(car.getColor() == Color.RED);
@@ -47,7 +47,7 @@ public class FactoryTests {
         Car car = factory1.produce(Color.RED);
         assertTrue(car.getPrice() == 20000);
         assertTrue(car.getType() == CarType.HYBRID);
-        assertTrue(car.getMPG() == 46);
+        assertTrue(car.getMpg() == 46);
         assertTrue(car.getTopSpeed() == 120);
         assertTrue(car.getSeats() == 5);
         assertTrue(car.getColor() == Color.RED);
@@ -61,7 +61,7 @@ public class FactoryTests {
         Car car = factory2.produce(Color.RED);
         assertTrue(car.getPrice() == 20000);
         assertTrue(car.getType() == CarType.TRUCK);
-        assertTrue(car.getMPG() == 18);
+        assertTrue(car.getMpg() == 18);
         assertTrue(car.getTopSpeed() == 140);
         assertTrue(car.getSeats() == 4);
         assertTrue(car.getColor() == Color.RED);

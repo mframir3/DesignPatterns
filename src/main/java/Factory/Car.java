@@ -1,4 +1,5 @@
 package Factory;
+
 public class Car {
 
     private int topSpeed;
@@ -25,7 +26,7 @@ public class Car {
         return color;
     }
 
-    public int getMPG() {
+    public int getMpg() {
         return mpg;
     }
 

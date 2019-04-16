@@ -16,6 +16,10 @@ public class Storage {
         cars.add(car);
     }
     
+    /**Removes and return the first car.
+     * 
+     * @return
+     */
     public Car get() {
         if (cars.isEmpty()) {
             return null;
