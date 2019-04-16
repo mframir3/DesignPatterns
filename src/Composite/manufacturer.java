@@ -104,8 +104,9 @@ public class manufacturer {
 
     public int sell() {
         int count = 0;
+        Random ran = new Random();
         for(dealership i : dealerships) {
-            if(i.sell(CarType.getRandomCarType(), Color.getRandomColor())){
+            if(i.sell(CarType.getRandomCarType(), Color.getRandomColor(), ran.nextInt(5000) + 25000 )){
                 count ++;
             }
         }
