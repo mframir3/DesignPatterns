@@ -34,6 +34,8 @@ public class Mediator {
         String winner = new String();
         Random ran = new Random();
         while(winner.equals("")){
+            System.out.println("Tick " + i + "\n"); //one iteration through the loop is a tick
+            
             if(i % 20 == 10) {
                 System.out.println("All manufacturers built factories");
                 ford.addFactory(new CarFactory(ran.nextInt(10000) + 20000, CarType.getRandomCarType()));
